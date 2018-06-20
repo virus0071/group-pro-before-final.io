@@ -1,0 +1,89 @@
+.foodDiv {
+    float:left;
+    margin-top:8%;
+    margin-right:8%;
+    margin-bottom:8%;
+    margin-left:4%;
+    text-align: center;
+    max-width:280px;
+    max-height:450px;
+}
+
+img {
+    width:250px;
+    height:250px;
+    
+}
+
+
+p {
+    max-width:270px;
+    margin-bottom:4%;
+}
+
+#recipesDiv {
+    font-size:20px;
+    font-weight:bold;
+    color: purple;
+    background-image : url("../images/pink_rice.png");
+    
+}
+/* #foodIcon{
+    opacity: 1;
+} */
+#youtube{
+    text-align: center;
+    width: 250px;
+}
+body {
+    background-image: url("../images/2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+ }
+ 
+.container {
+    width: 98%;
+ }
+ 
+.jumbotron {
+    font-family: 'Marck Script', cursive;
+    font-weight: bold;
+    background-color: rgba(255, 230, 185, 0.6);
+    
+    
+ }
+ 
+#form {
+    width: 40%;
+    float: left;
+    margin-left: 25px;
+}
+
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    background-color: rgba(255, 230, 185, 0.6);
+    height: 250px;
+    font-family: 'Marck Script', cursive;
+    font-weight: bold;
+ }
+ 
+h3 {
+    background-color: rgba(255, 230, 185, 0.6);
+    height: 75px;
+    font-family: 'Marck Script', cursive;
+    font-weight: bold;
+ }
+
+#supportNum {
+    font-size: 30px;
+    margin-bottom: 4%;
+ }
+
+.button-circle {
+    margin-right:4%;
+
+}
