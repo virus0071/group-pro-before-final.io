@@ -164,6 +164,8 @@ body {
 #supportNum {
     font-size: 30px;
     margin-bottom: 4%;
+    font-weight:bold;
+    color:black;
  }
 
 .button-circle {
