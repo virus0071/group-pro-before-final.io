@@ -48,11 +48,12 @@ h3 {
  }
 
  h5 {
-    max-width:270px;
+    background-color:grey;
+    max-width: 25%;
     margin-bottom:4%;
     font-weight:bold;
     font-size:26px;
-    color:rgb(36, 34, 165);
+    color:rgb(241, 255, 52);
 }
 
 h6{
