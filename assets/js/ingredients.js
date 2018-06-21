@@ -1,14 +1,19 @@
 $(document).ready(function () {
-    
+
     $(document).on("click", "#run", function (event) {
         event.preventDefault();
-        
         var ing1 = $("#ing1").val().trim();
         var ing2 = $("#ing2").val().trim();
         var ing3 = $("#ing3").val().trim();
 
+        $("#ing1").val("");
+        $("#ing2").val("");
+        $("#ing3").val("");
+
+
+
         //var queryURL = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?fillIngredients=false&ingredients=apples%2Cflour%2Csugar&limitLicense=false&number=5&ranking=1"
-        var queryURL = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?fillIngredients=false&ingredients="+ing1+"%2C"+ing2+"%2C"+ing3+"sugar&limitLicense=false&number=4&ranking=1"
+        var queryURL = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?fillIngredients=false&ingredients="+ing1+"%2C"+ing2+"%2C"+ing3+"&limitLicense=false&number=4&ranking=1"
         //var foodTitleArray = [];
 
         //console.log(foodTitleArray);
@@ -37,19 +42,17 @@ $(document).ready(function () {
                 var titleUrl = foodTitle.replace(/\s/g, '-');
                 var foodId = response[i].id;
                 var foodUrl = "https://spoonacular.com/recipes/" + titleUrl + "-" + foodId + "";
-                console.log(foodUrl);
+                //console.log(foodUrl);
                 var foodImage = $("<img>");
                 foodImage.attr("src", response[i].image);
                 var a = $("<a>");
                 a.attr("href", foodUrl);
                 a.append(foodImage);
                 var usedIng = response[i].usedIngredientCount;
-                var p2 = $("<p>").text("No. of ingredients used: " + usedIng);
-                
-                foodDiv.append(a);
+                var p2 = $("<p>").text("Ingredients used: " + usedIng);
                 foodDiv.append(p1);
                 foodDiv.append(p2);
-                
+                foodDiv.append(a);
                 
                 youtubeApiCall(foodTitle, foodDiv);
 
@@ -64,7 +67,7 @@ $(document).ready(function () {
         })
 
         //debugger;
-        
+
 
     })
 
@@ -94,7 +97,7 @@ $(document).ready(function () {
 
 
 
-            foodDiv.prepend("<a href='" + videoURL + "'class='button button-caution button-box button-raised button-giant button-longshadow' id='youtube'><i class='fa fa-youtube'></i></a>");
+            foodDiv.append("<a href='" + videoURL + "'class='button button-caution button-box button-raised button-giant button-longshadow' id='youtube'><i class='fa fa-youtube'></i></a>");
             $("#recipesDiv").append(foodDiv);
 
 
@@ -108,7 +111,10 @@ $(document).ready(function () {
     }
 
 
+    
+
 });
+
 
 
 
