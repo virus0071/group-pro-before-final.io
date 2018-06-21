@@ -1,9 +1,9 @@
-body {
+#newBack{
     background-image: url("../images/Pantry.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
- }
+}
  
 .container {
     width: 98%;
