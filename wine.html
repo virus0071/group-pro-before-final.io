@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Pantry!</title>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel='icon' href='assets/images/1.png' type='image/x-icon'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script">
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+</head>
+
+<body>
+
+    
+        
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Wine Recommendations</h1>
+        </div>
+
+    <div class="container">
+
+        <a href="index.html" class="button button-pill button-primary button-directions">Home</a>
+        <a href="ingredients.html" class="button button-pill button-primary button-directions">Ingredients</a>
+        <a href="wine.html" class="button button-pill button-primary button-directions">Wine</a>
+        <a href="surprise.html" class="button button-pill button-primary button-directions">Surprise!</a>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-3">
+
+            <div class="jumbotron">
+
+            <input class="form-control form-control-lg" id="price" type="text" placeholder="Max. Price($)">
+
+            <br>
+            <br>
+
+            <input class="form-control form-control-lg" id="wineType" type="text" placeholder="Wine type">
+
+            <br>
+            <br>
+
+
+
+            <button type="button" class="btn btn-primary" id="run">Cheers!</button>
+
+        </div>
+
+    </div>
+    <div class="col-lg-9" id="winesDiv">
+
+    </div>
+    </div>
+</div>
+
+
+    <div class="push"></div>
+    <footer class="footer">
+        <div class="container">
+            <p>Do you like our App?</p>
+            <button class="button button-3d button-action button-circle " id="support">
+                <i class="fa fa-thumbs-up"></i>
+            </button>
+            <button class="button button-3d button-action button-circle button-highlight" id="unsupport">
+                <i class="fa fa-thumbs-down"></i>
+            </button>
+            <div id="supportNum"></div>
+        </div>
+
+
+    </footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/wine.js"></script>
+
+
+</body>
+
+</html>
